@@ -1,6 +1,6 @@
 import sanityClient from "./sanity";
 import * as queries from "./sanityQueries";
-import { Room } from "@/app/models/room";
+import { Room } from "@/models/room";
 
 export async function getFeatureRoom() {
   const result = await sanityClient.fetch<Room>(
@@ -11,5 +11,10 @@ export async function getFeatureRoom() {
     }
   );
 
+  return result;
+}
+
+export async function getRooms() {
+  const result = await sanityClient.fetch(queries.getRoomsQuery);
   return result;
 }
