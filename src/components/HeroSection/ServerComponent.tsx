@@ -3,15 +3,15 @@ import Image from "next/image";
 export const heading1 = (
   <>
     <h1 className="font-heading mb-6 capitalize">
-      explore our exquissite hotel
+      khám phá khách sạn tuyệt đẹp của chúng tôi
     </h1>
 
     <p className="text-[#4a4a4a] dark:text-[#fff] mb-12 max-w-lg">
-      Experience an Exquisite Hotel Inmmersed in Rich History and Timeless
-      Elegance.
+      Trải nghiệm một khách sạn tinh tế đắm chìm trong lịch sử phong phú và sự
+      thanh lịch vượt thời gian.
     </p>
 
-    <button className="btn-primary">Get Started</button>
+    <button className="btn-primary">Bắt đầu</button>
   </>
 );
 

@@ -58,7 +58,7 @@ const BookRoomCta: FC<Props> = (props) => {
         </span>
         {discount ? (
           <span className="font-bold text-xl">
-            | discount {discount}%. Now{" "}
+            | giảm {discount}%. Chỉ còn{" "}
             <span className="text-tertiary-dark">$ {discountPrice}</span>
           </span>
         ) : (
@@ -76,7 +76,7 @@ const BookRoomCta: FC<Props> = (props) => {
             htmlFor="check-in-date"
             className="block text-sm font-medium to-gray-900 dark:to-gray-400"
           >
-            Check In date
+            Ngày nhận phòng
           </label>
           <DatePicker
             selected={checkinDate}
@@ -93,7 +93,7 @@ const BookRoomCta: FC<Props> = (props) => {
             htmlFor="check-out-date"
             className="block text-sm font-medium to-gray-900 dark:to-gray-400"
           >
-            Check Out date
+            Ngày trả phòng
           </label>
           <DatePicker
             selected={checkoutDate}
@@ -113,7 +113,7 @@ const BookRoomCta: FC<Props> = (props) => {
             htmlFor="adults"
             className="block text-sm font-medium text-gray-900 dark:text-gray-400"
           >
-            Adults
+            Người lớn
           </label>
           <input
             type="number"
@@ -132,7 +132,7 @@ const BookRoomCta: FC<Props> = (props) => {
             htmlFor="children"
             className="block text-sm font-medium text-gray-900 dark:text-gray-400"
           >
-            Children
+            Trẻ em
           </label>
           <input
             type="number"
@@ -157,7 +157,7 @@ const BookRoomCta: FC<Props> = (props) => {
         onClick={handleBookNowClick}
         className="btn-primary w-full mt-6 disabled:bg-gray-500 disabled:cursor-not-allowed"
       >
-        {isBooked ? "Booked" : "Book Now"}
+        {isBooked ? "ĐÃ ĐẶT" : "ĐẶT PHÒNG"}
       </button>
     </div>
   );

@@ -89,7 +89,7 @@ const hotelRoom = {
       type: "text",
       validation: (Rule) => Rule.required(),
       initialValue:
-        "Check-in time is 12:00 PM, checkout time is 11:59 AM. If you leave behind any items, please contact the receptionist.",
+        "Giờ nhận phòng là 12:00 trưa, giờ trả phòng là 11:59 sáng. Nếu bạn để quên bất kỳ đồ vật nào, vui lòng liên hệ với lễ tân.",
     }),
     defineField({
       name: "dimension",

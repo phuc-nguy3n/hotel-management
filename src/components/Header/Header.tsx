@@ -68,13 +68,13 @@ export default function Header() {
 
       <ul className="flex items-center justify-between w-full md:w-1/3 mt-4">
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/">Home</Link>
+          <Link href="/">Trang chủ</Link>
         </li>
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/rooms">Rooms</Link>
+          <Link href="/rooms">Đặt phòng</Link>
         </li>
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Liên hệ</Link>
         </li>
       </ul>
     </header>

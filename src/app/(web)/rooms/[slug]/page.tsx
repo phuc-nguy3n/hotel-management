@@ -113,12 +113,14 @@ const RoomDetails = (props: { params: { slug: string } }) => {
               </div>
 
               <div className="mb-11">
-                <h2 className="font-bold text-3xl mb-2">Description</h2>
+                <h2 className="font-bold text-3xl mb-2">Mô tả</h2>
                 <p>{room.description}</p>
               </div>
 
               <div className="mb-11">
-                <h2 className="font-bold text-3xl mb-2">Offered Amenities</h2>
+                <h2 className="font-bold text-3xl mb-2">
+                  Tiện nghi được cung cấp
+                </h2>
                 <div className="grid grid-cols-2 gap-2">
                   {room.offeredAmenities.map((amenity) => (
                     <div
@@ -135,7 +137,7 @@ const RoomDetails = (props: { params: { slug: string } }) => {
               </div>
 
               <div className="mb-11">
-                <h2 className="font-bold text-3xl mb-2">Safety And Hygiene</h2>
+                <h2 className="font-bold text-3xl mb-2">An toàn và vệ sinh</h2>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="flex items-center my-1 md:my-0">
                     <MdOutlineCleaningServices />
@@ -162,7 +164,9 @@ const RoomDetails = (props: { params: { slug: string } }) => {
 
               <div className="shadow dark:shadow-white rounded-lg p-6">
                 <div className="items-center mb-4">
-                  <p className="md:text-lg font-semibold">Customer Reviews</p>
+                  <p className="md:text-lg font-semibold">
+                    Đánh giá của khách hàng
+                  </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* Reviews */}
