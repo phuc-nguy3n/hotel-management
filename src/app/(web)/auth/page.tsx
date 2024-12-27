@@ -98,7 +98,7 @@ const Auth = () => {
             type="text"
             name="name"
             id="name"
-            placeholder="Phuc Nguyen"
+            placeholder="Username"
             required
             className={inputSylte}
             value={formData.name}
